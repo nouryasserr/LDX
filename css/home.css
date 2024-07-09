@@ -459,6 +459,12 @@ p {
   p {
     font-size: 14px;
   }
+  .my-element {
+    opacity: 1;
+  }
+  .animate {
+    animation: none;
+  }
   .intro-container {
     grid-template-columns: 10% 4% 11% 60% 15%;
     grid-template-rows: 5% 40% 23% 15% 10% 2% 5%;
