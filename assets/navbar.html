@@ -1,0 +1,227 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+  body {
+    margin: 0;
+    font-family: "Cairo", serif;
+  }
+  header {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    background-color: #fff;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .toogle i {
+    font-size: 22px;
+    color: #0d0d0d;
+    display: none;
+  }
+  .search {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  .search input[type="search"] {
+    width: 100%;
+    padding: 10px 50px 10px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #76766a;
+  }
+  .search .search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .search .search-icon .fas {
+    font-size: 20px;
+    color: #76766a;
+  }
+  .sign {
+    display: flex;
+    gap: 1rem;
+  }
+  .sign a {
+    text-decoration: none;
+    color: #e75c2e;
+    background-color: #fff;
+    padding: 5px 8px;
+    width: 85px;
+    text-align: center;
+    border: 1px solid #e75c2e;
+    font-size: 16px;
+    transition: 0.5s;
+    border-radius: 3px;
+  }
+  .sign a:hover {
+    color: #f2f2f2;
+    background-color: #e75c2e;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 5px #d3d3d3, 0 -5px 5px transparent, 5px 0 5px transparent,
+      -5px 0 5px transparent;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  nav a {
+    text-decoration: none;
+    color: #76766a;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+  }
+  nav a:hover {
+    color: #e75c2e;
+  }
+  .responsive-nav {
+    display: none;
+  }
+  @media (max-width: 870px) {
+    .responsive-nav {
+      width: 100%;
+      display: block;
+    }
+    header {
+      display: none;
+    }
+    .header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: rgb(237, 237, 237, 0.1);
+      backdrop-filter: blur(10px);
+    }
+    .header button {
+      border: none;
+      background-color: transparent;
+    }
+    .header button i {
+      font-size: 24px;
+      color: #0d0d0d;
+    }
+    nav {
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: auto;
+      flex-direction: column;
+    }
+    nav ul {
+      display: none;
+    }
+    .side {
+      margin: 30px 50px;
+      display: none;
+      flex-direction: column;
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .nav-link i,
+    .nav-link a {
+      font-size: 20px;
+      color: #0d0d0d;
+    }
+    .sign {
+      display: none;
+    }
+    .sign a {
+      width: 90px;
+    }
+    .side-sign {
+      display: flex;
+    }
+  }
+</style>
+<header>
+  <div class="logo">
+    <a href="home.html"><img src="imgs/logo.png" alt="LDX" height="80" /></a>
+  </div>
+  <div class="search">
+    <input
+      type="search"
+      placeholder="بحث ..."
+      name="search"
+      id="search"
+      autocomplete="on"
+    />
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+  <div class="sign">
+    <a href="signin.html">تسجيل دخول</a>
+  </div>
+</header>
+<nav>
+  <div class="responsive-nav">
+    <div class="header">
+      <button onclick="showSidebar()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="logo">
+        <a href="home.html"
+          ><img src="imgs/logo.png" alt="LDX" width="110"
+        /></a>
+      </div>
+      <div class="search-icon">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <ul class="side">
+      <li class="nav-link">
+        <i class="fa-solid fa-circle-info"></i><a href="about.html">من نحن</a>
+      </li>
+      <li class="nav-link">
+        <i class="fa-regular fa-handshake"></i
+        ><a href="services.html">خدماتنا</a>
+      </li>
+      <li class="nav-link">
+        <i class="fa-solid fa-person-chalkboard"></i
+        ><a href="courses.html">الدورات التدريبية</a>
+      </li>
+      <li class="nav-link">
+        <i class="fa-regular fa-calendar"></i
+        ><a href="calender.html">المنصة </a>
+      </li>
+      <li class="nav-link">
+        <i class="fa-regular fa-newspaper"></i><a href="news.html">الاخبار</a>
+      </li>
+      <li class="nav-link">
+        <i class="fa-solid fa-phone"></i><a href="contact.html">تواصل معنا</a>
+      </li>
+      <div class="sign side-sign">
+        <a href="signin.html">تسجيل دخول</a>
+      </div>
+    </ul>
+  </div>
+  <ul>
+    <li><a href="about.html">من نحن</a></li>
+    <li><a href="services.html">خدمتنا</a></li>
+    <li><a href="courses.html">الدورات التدريبية</a></li>
+    <li><a href="calender.html">المنصه </a></li>
+    <li><a href="news.html">الاخبار</a></li>
+    <li><a href="contact.html">تواصل معنا</a></li>
+  </ul>
+</nav>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning & Development X</title>
+    <link rel="icon" href="imgs/logo.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="form signin">
+      <div class="left signin-left">
+        <h2>ليس لديك حساب؟</h2>
+        <p>دعنا نجهزك بالكامل حتى تتمكن من البدء في إنشاء أول تجربة تأهيل لك</p>
+        <a href="signup.html">انشاء حساب</a>
+        <img src="imgs/books-svgrepo-com.svg" alt="learning" />
+      </div>
+      <div class="right signin-right">
+        <h2>انشاء حساب جديد</h2>
+        <hr />
+        <form action="#" method="get">
+          <div class="input-line">
+            <div class="input-box">
+              <label for="email">البريد الالكتروني</label>
+              <input type="email" id="email" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="input-line">
+            <div class="input-box">
+              <label for="new-password">كلمة المرور </label>
+              <input type="password" id="new-password" required />
+            </div>
+          </div>
+          <input type="submit" value="ارسال" />
+        </form>
+      </div>
+    </div>
+    <script>
+      function loadHTML(elementId, fileName) {
+        fetch(fileName)
+          .then((response) => response.text())
+          .then((data) => (document.getElementById(elementId).innerHTML = data))
+          .catch((error) => console.error("Error loading HTML:", error));
+      }
+      function showSidebar() {
+        const side = document.querySelector(".side");
+        if (side.style.display === "flex") {
+          side.style.display = "none";
+        } else {
+          side.style.display = "flex";
+        }
+      }
+      loadHTML("navbar", "assets/navbar.html");
+    </script>
+  </body>
+</html>
