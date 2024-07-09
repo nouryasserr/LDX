@@ -271,7 +271,7 @@ p {
   transition: transform 0s, opacity 0s;
 }
 .third-element.animate-third {
-  animation: zoomIn 3s forwards;
+  animation: zoomIn 1s forwards;
 }
 .values {
   margin: 50px 0;
