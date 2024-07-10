@@ -50,7 +50,7 @@ p {
   border-bottom: 1px solid #e75c2e;
   border-top: 1px solid #e75c2e;
   height: 5px;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 /* intro */
 @keyframes slideInRight {
@@ -159,7 +159,7 @@ p {
 .intro-text {
   grid-area: 2 / 2 / 4 / 5;
   height: 150px;
-  background-color: #fff;
+  background-color: #f5f5f5;
   border-radius: 3px;
   text-align: center;
   padding: 20px;
@@ -171,8 +171,8 @@ p {
 }
 .tit {
   position: relative;
-  color: #f5f5f5;
-  -webkit-text-stroke: 0.3vw #f5f5f5;
+  color: #fff;
+  -webkit-text-stroke: 0.3vw #fff;
   text-transform: uppercase;
 }
 .title-2 {
@@ -562,7 +562,7 @@ p {
     padding: 5px;
   }
   .tit h6 {
-    color: #f5f5f5;
+    color: #fff;
   }
   .goals {
     margin: 0 20px;
