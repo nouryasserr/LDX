@@ -87,7 +87,7 @@ p {
 }
 .procedure-img {
   grid-area: procedure-img;
-  background-image: url(../imgs/procedure.jpg);
+  background-image: url(../imgs/company-proced.jpg);
   background-size: cover;
   border-radius: 3px;
 }

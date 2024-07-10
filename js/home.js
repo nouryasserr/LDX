@@ -18,6 +18,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 // end-intro-animation
+// slide-show
+document.addEventListener("DOMContentLoaded", (event) => {
+  const images = [
+    "../imgs/procedure.jpg",
+    "../imgs/procedure2.jpg",
+    "../imgs/value.jpg",
+  ];
+  let currentImageIndex = 0;
+  const introImgElement = document.querySelector(".intro-img");
+  setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    introImgElement.style.backgroundImage = `url(${images[currentImageIndex]})`;
+  }, 9000);
+});
+// end-slide-show
 // introduction-animation
 document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(
