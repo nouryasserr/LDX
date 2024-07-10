@@ -417,12 +417,12 @@ p {
   transition: 0.5s;
 }
 .category img {
-  background-color: #ffe0d9;
+  background-color: rgb(255, 186, 170);
   padding: 15px;
   border-radius: 35px;
 }
 .category h6 {
-  background-color: #ffe0d9;
+  background-color: rgb(255, 186, 170);
   border-radius: 35px;
   width: 210px;
   padding: 15px 35px;
@@ -578,8 +578,17 @@ p {
   h2 {
     font-size: 24px;
   }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
   h5 {
     font-size: 16px;
+  }
+  .intro-text h6 {
+    font-size: 12px;
   }
   .secondary {
     display: none;
