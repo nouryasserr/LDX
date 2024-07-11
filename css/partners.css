@@ -21,18 +21,6 @@ h1 {
   height: 5px;
   background-color: #fff;
 }
-/* head */
-.head {
-  background-color: rgba(238, 238, 238, 1);
-  background-size: cover;
-  padding: 100px 10px 50px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/* end-head */
 /* partners */
 .partners {
   padding: 20px 0;

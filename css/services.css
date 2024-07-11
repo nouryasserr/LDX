@@ -1,0 +1,125 @@
+h1 {
+  font-size: 32px;
+  color: #4a4a4a;
+  padding-bottom: 15px;
+}
+h3 {
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 24px;
+}
+.header h1 {
+  margin: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+.header h1:after,
+.header h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #e75c2e;
+  border-top: 1px solid #e75c2e;
+  height: 5px;
+  background-color: #fff;
+}
+/* services */
+.services {
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+}
+.inner-services {
+  margin: 50px 5%;
+  width: 90%;
+}
+.inner-services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.service {
+  width: 390px;
+  height: 350px;
+  background-size: cover;
+  box-shadow: -1px 0px 23px -11px rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.service1 {
+  background-image: url(../imgs/training.jpg);
+}
+.service2 {
+  background-image: url(../imgs/achievment.jpg);
+}
+.service3 {
+  background-image: url(../imgs/displine.jpg);
+}
+.service4 {
+  background-image: url(../imgs/elearning.jpg);
+}
+.service5 {
+  background-image: url(../imgs/measure.jpg);
+}
+.service6 {
+  background-image: url(../imgs/consulting.jpg);
+}
+.caption {
+  width: 390px;
+  height: 350px;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  background-size: cover;
+  transition: 0.5s;
+}
+.caption:hover {
+  backdrop-filter: blur(0px);
+}
+.caption h3 {
+  width: 250px;
+  position: relative;
+  top: 76%;
+  right: 50%;
+  line-height: 0.9cm;
+}
+@media (max-width: 540px) {
+  .service {
+    width: 350px;
+    height: 300px;
+  }
+  .caption {
+    width: 350px;
+    height: 300px;
+  }
+  .caption h3 {
+    top: 70%;
+    right: 20%;
+  }
+}
+@media (max-width: 370px) {
+  .service {
+    width: 280px;
+    height: 250px;
+  }
+  .caption {
+    width: 280px;
+    height: 250px;
+  }
+  .caption h3 {
+    font-size: 20px;
+    right: 4%;
+  }
+}
+/* end-services */
