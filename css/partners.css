@@ -1,0 +1,144 @@
+h1 {
+  font-size: 32px;
+  color: #4a4a4a;
+  padding-bottom: 15px;
+}
+.header h1 {
+  margin: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+.header h1:after,
+.header h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #e75c2e;
+  border-top: 1px solid #e75c2e;
+  height: 5px;
+  background-color: #fff;
+}
+/* head */
+.head {
+  background-color: rgba(238, 238, 238, 1);
+  background-size: cover;
+  padding: 100px 10px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* end-head */
+/* partners */
+.partners {
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+}
+.inner-partners {
+  margin: 50px 5%;
+  width: 90%;
+}
+.inner-partners-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.partner {
+  padding: 25px;
+  width: 260px;
+  height: 190px;
+  background-image: url(../imgs/logo1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: -1px 0px 23px -11px rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.partner1 {
+  background-image: url(../imgs/logo1.jpg);
+}
+.partner1:hover {
+  background-image: url(../imgs/logo1hover.jpg);
+}
+.partner2 {
+  background-image: url(../imgs/logo2.jpg);
+}
+.partner2:hover {
+  background-image: url(../imgs/logo2hover.jpg);
+}
+.partner3 {
+  background-image: url(../imgs/logo3.jpg);
+}
+.partner3:hover {
+  background-image: url(../imgs/logo3hover.jpg);
+}
+.partner4 {
+  background-image: url(../imgs/logo4.jpg);
+}
+.partner4:hover {
+  background-image: url(../imgs/logo4hover.jpg);
+}
+.partner5 {
+  background-image: url(../imgs/logo5.jpg);
+}
+.partner5:hover {
+  background-image: url(../imgs/logo5hover.jpg);
+}
+.partner6 {
+  background-image: url(../imgs/logo6.jpg);
+}
+.partner6:hover {
+  background-image: url(../imgs/logo6hover.jpg);
+}
+.partner7 {
+  background-image: url(../imgs/logo7.jpg);
+}
+.partner7:hover {
+  background-image: url(../imgs/logo7hover.jpg);
+}
+.partner8 {
+  background-image: url(../imgs/logo8.jpg);
+}
+.partner8:hover {
+  background-image: url(../imgs/logo8hover.jpg);
+}
+.partner9 {
+  background-image: url(../imgs/logo9.jpg);
+}
+.partner9:hover {
+  background-image: url(../imgs/logo9hover.jpg);
+}
+.partner10 {
+  background-image: url(../imgs/logo10hover.jpg);
+}
+.partner10:hover {
+  background-image: url(../imgs/logo10.jpg);
+}
+.partner11 {
+  background-image: url(../imgs/logo11.jpg);
+}
+.partner11:hover {
+  background-image: url(../imgs/logo11hover.jpg);
+}
+.partner12 {
+  background-image: url(../imgs/logo12.jpg);
+}
+.partner12:hover {
+  background-image: url(../imgs/logo12hover.jpg);
+}
+/* end-partners */

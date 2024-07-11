@@ -115,3 +115,23 @@ document.addEventListener("DOMContentLoaded", function () {
   onScroll();
 });
 // end-categories-animation
+// partners-animation
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll(".fade-element");
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("fade-in");
+          void entry.target.offsetWidth;
+          entry.target.classList.add("fade-in");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  fadeElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+// end-partners-animation

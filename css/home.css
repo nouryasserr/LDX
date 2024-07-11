@@ -426,6 +426,106 @@ p {
   padding: 15px 35px;
 }
 /* end-categories */
+/* partners */
+.fade-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+  opacity: 0;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadein 3s forwards;
+}
+.partners {
+  margin: 50px 0;
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+}
+.inner-partners {
+  margin: 50px 5%;
+  width: 90%;
+}
+.inner-partners-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.partner {
+  padding: 25px;
+  width: 240px;
+  height: 190px;
+  background-image: url(../imgs/logo1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: -1px 0px 23px -11px rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.partner1 {
+  background-image: url(../imgs/logo1.jpg);
+}
+.partner1:hover {
+  background-image: url(../imgs/logo1hover.jpg);
+}
+.partner2 {
+  background-image: url(../imgs/logo2.jpg);
+}
+.partner2:hover {
+  background-image: url(../imgs/logo2hover.jpg);
+}
+.partner3 {
+  background-image: url(../imgs/logo3.jpg);
+}
+.partner3:hover {
+  background-image: url(../imgs/logo3hover.jpg);
+}
+.partner4 {
+  background-image: url(../imgs/logo4.jpg);
+}
+.partner4:hover {
+  background-image: url(../imgs/logo4hover.jpg);
+}
+.partner5 {
+  background-image: url(../imgs/logo5.jpg);
+}
+.partner5:hover {
+  background-image: url(../imgs/logo5hover.jpg);
+}
+.inner-partners a {
+  text-decoration: none;
+  border: 1px solid #e75c2e;
+  border-radius: 3px;
+  color: #e75c2e;
+  width: 210px;
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.inner-partners a:hover {
+  background-color: #e75c2e;
+  color: #fff;
+}
+/* end-partners */
 /* responsive */
 @media (max-width: 1150px) {
   h4 {
