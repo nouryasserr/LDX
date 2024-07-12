@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning & Development X</title>
+    <link rel="icon" href="imgs/logo.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="head">
+      <div class="header">
+        <h1>تواصل معنا</h1>
+      </div>
+    </div>
+    <!-- info -->
+    <div class="info">
+      <div class="card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h4>موقعنا</h4>
+        <p>زززززززززززززززززززز</p>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-phone-volume"></i>
+        <h4>رقم الهاتف</h4>
+        <p>ززززىتنىقثتىثشل</p>
+      </div>
+      <div class="card">
+        <i class="fa-regular fa-envelope"></i>
+        <h4>البريد الالكتروني</h4>
+        <p>ززةىنىنىصتىصززززز</p>
+      </div>
+      <div class="card">
+        <i class="fa-regular fa-clock"></i>
+        <h4>ساعات العمل</h4>
+        <p>زززززززززززززززززززز</p>
+      </div>
+    </div>
+    <!-- end-info -->
+    <!-- form -->
+    <div class="form">
+      <div class="right">
+        <h3>ارسل رسالة</h3>
+        <hr />
+        <form action="#" method="get">
+          <div class="input-line">
+            <div class="input-box">
+              <label for="name">اسم المستخدم</label>
+              <input type="text" id="name" required autocomplete="name" />
+            </div>
+            <div class="input-box">
+              <label for="phone">رقم الهاتف</label>
+              <input type="text" id="phone" required autocomplete="on" />
+            </div>
+          </div>
+          <div class="input-line">
+            <div class="input-box">
+              <label for="email">البريد الالكتروني</label>
+              <input type="email" id="email" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="input-line">
+            <div class="input-box">
+              <label for="email"> الرسالة</label>
+              <textarea
+                name="message"
+                class="input"
+                id="message"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <input type="submit" value="ارسال" />
+        </form>
+      </div>
+      <div class="left">
+        <h2>ابق على تواصل معنا</h2>
+        <p>
+          نحن هنا لمساعدتكم! لا تترددوا في الاتصال بنا لأي استفسار أو معلومة.
+          فريقنا مستعد دائمًا لخدمتكم بكل اهتمام واحترافية
+        </p>
+      </div>
+    </div>
+    <!-- end-form -->
+    <div class="head">
+      <div class="header">
+        <h1>ابحث عنا على خرائط جوجل</h1>
+      </div>
+    </div>
+    <!-- location -->
+    <div class="location-container">
+      <div class="map-container">
+        <iframe
+          src="https://maps.app.goo.gl/9dvC8tP3JDYYShxa9"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- end-location -->
+    <div id="footer"></div>
+    <script>
+      function loadHTML(elementId, fileName) {
+        fetch(fileName)
+          .then((response) => response.text())
+          .then((data) => (document.getElementById(elementId).innerHTML = data))
+          .catch((error) => console.error("Error loading HTML:", error));
+      }
+      function showSidebar() {
+        const side = document.querySelector(".side");
+        if (side.style.display === "flex") {
+          side.style.display = "none";
+        } else {
+          side.style.display = "flex";
+        }
+      }
+      loadHTML("navbar", "assets/navbar.html");
+      loadHTML("footer", "assets/footer.html");
+    </script>
+  </body>
+</html>
