@@ -8,6 +8,12 @@ h3 {
   color: #f2f2f2;
   font-size: 24px;
 }
+p {
+  margin: 10px 0 0;
+  color: #4a4a4a;
+  font-size: 16px;
+  display: none;
+}
 .header h1 {
   margin: 20px;
   text-align: center;
@@ -53,10 +59,11 @@ h3 {
   width: 390px;
   height: 350px;
   background-size: cover;
+  padding: 20px;
   box-shadow: -1px 0px 23px -11px rgba(0, 0, 0, 0.8);
   border-radius: 3px;
   box-sizing: border-box;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 .service1 {
   background-image: url(../imgs/training.jpg);
@@ -76,50 +83,68 @@ h3 {
 .service6 {
   background-image: url(../imgs/consulting.jpg);
 }
-.caption {
-  width: 390px;
-  height: 350px;
-  background: transparent;
-  backdrop-filter: blur(2px);
-  background-size: cover;
-  transition: 0.5s;
-}
-.caption:hover {
-  backdrop-filter: blur(0px);
-}
-.caption h3 {
+.service-title {
   width: 250px;
   position: relative;
   top: 76%;
   right: 50%;
   line-height: 0.9cm;
+  transition: 1.5s;
 }
-@media (max-width: 540px) {
+.service:hover {
+  background: rgb(255, 224, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 224, 217, 1) 0%,
+    rgba(255, 224, 217, 1) 35%,
+    rgba(255, 186, 170, 1) 100%
+  );
+}
+.service:hover .service-title {
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  color: #2e2e2e;
+}
+.service:hover p {
+  display: inline-block;
+}
+@media (max-width: 700px) {
+  .service-title {
+    transition: 0s;
+  }
+}
+@media (max-width: 510px) {
+  p {
+    font-size: 14px;
+    margin: 5px 0 0;
+  }
+  .service:hover .service-title {
+    font-size: 18px;
+  }
   .service {
+    padding: 5px;
     width: 350px;
     height: 300px;
   }
-  .caption {
-    width: 350px;
-    height: 300px;
-  }
-  .caption h3 {
+  .service-title {
     top: 70%;
     right: 20%;
   }
 }
 @media (max-width: 370px) {
+  p {
+    font-size: 12px;
+  }
   .service {
     width: 280px;
-    height: 250px;
+    height: 280px;
   }
-  .caption {
-    width: 280px;
-    height: 250px;
-  }
-  .caption h3 {
-    font-size: 20px;
+  .service:hover .service-title {
     right: 4%;
+    font-size: 16px;
   }
 }
 /* end-services */

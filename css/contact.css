@@ -45,6 +45,7 @@ p {
 }
 .card {
   width: 250px;
+  height: 185px;
   text-align: center;
   background-color: #fff;
   border-radius: 3px;
