@@ -1,9 +1,16 @@
 <style>
   footer {
-    padding: 20px 20px 5px;
-    background-color: #c8c5be27;
+    background-color: rgba(238, 238, 238, 1);
   }
   footer .top {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +26,7 @@
     list-style: none;
   }
   .footer-links a,
-  .bottom a {
+  .logo-area a {
     text-decoration: none;
     color: #0d0d0d;
     font-size: 18px;
@@ -27,7 +34,7 @@
     transition: 0.5s;
   }
   .footer-links a:hover,
-  .bottom a:hover {
+  .logo-area a:hover {
     color: #e75c2e;
   }
   .bottom {
@@ -45,10 +52,50 @@
     align-items: center;
     gap: 1.2rem;
   }
+  .top-header {
+    padding: 8px;
+    background-color: #e75c2e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .right-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .top-header a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .top-header a:hover {
+    color: #ffe0d9;
+  }
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .flags,
+  .data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
 </style>
 <footer>
   <div class="top">
-    <img src="imgs/logo.png" alt="LDX" height="110" />
+    <div class="logo-area">
+      <img src="imgs/logo.png" alt="LDX" height="70" />
+      <a href="https://spaceoutagency.com/" dir="ltr"
+        >© 2024 Spaceout. All rights reserved</a
+      >
+    </div>
     <ul class="footer-links">
       <li><a href="about.html">من نحن</a></li>
       <li><a href="services.html">خدمتنا</a></li>
@@ -59,17 +106,27 @@
       <li><a href="contact.html">تواصل معنا</a></li>
     </ul>
   </div>
-  <div class="bottom">
-    <a href="https://spaceoutagency.com/" dir="ltr"
-      >© 2024 Spaceout. All rights reserved</a
-    >
-    <div class="social-links">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-threads"></i></a>
+  <div class="top-header">
+    <div class="left-data">
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-threads"></i></a>
+      </div>
+    </div>
+    <div class="right-data">
+      <div class="data">
+        <a href="#">info@Ld-x.net</a>
+        <a href="#" dir="ltr">+966549698686 </a>
+        <a href="#" dir="ltr">+966505281221 </a>
+      </div>
+      <div class="flags">
+        <img src="imgs/world.png" alt="flag" height="25" />
+        <img src="imgs/circle.png" alt="flag" height="25" />
+      </div>
     </div>
   </div>
 </footer>
