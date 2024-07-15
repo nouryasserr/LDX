@@ -76,13 +76,13 @@ p {
   background-image: url(../imgs/displine.jpg);
 }
 .service4 {
-  background-image: url(../imgs/elearning.jpg);
+  background-image: url(../imgs/procedure2.jpg);
 }
 .service5 {
-  background-image: url(../imgs/measure.jpg);
+  background-image: url(../imgs/value.jpg);
 }
 .service6 {
-  background-image: url(../imgs/consulting.jpg);
+  background-image: url(../imgs/measure.jpg);
 }
 .service-title {
   width: 250px;
@@ -113,12 +113,30 @@ p {
 .service:hover p {
   display: inline-block;
 }
+/* logos */
+.logos {
+  margin: 50px 5%;
+  width: 90%;
+}
+.logos img {
+  width: 100%;
+}
+/* end-logos */
 @media (max-width: 700px) {
   .service-title {
     transition: 0s;
   }
 }
 @media (max-width: 510px) {
+  .header {
+    justify-content: center;
+  }
+  .header h1 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 24px;
+  }
   p {
     font-size: 14px;
     margin: 5px 0 0;
@@ -137,6 +155,9 @@ p {
   }
 }
 @media (max-width: 370px) {
+  h3 {
+    font-size: 18px;
+  }
   p {
     font-size: 12px;
   }
@@ -144,9 +165,16 @@ p {
     width: 280px;
     height: 280px;
   }
+  .service-title {
+    right: 4%;
+  }
   .service:hover .service-title {
     right: 4%;
     font-size: 16px;
+  }
+  .inner-services {
+    margin: 0;
+    width: 100%;
   }
 }
 /* end-services */
