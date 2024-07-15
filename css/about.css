@@ -25,6 +25,25 @@ p {
   font-size: 16px;
   margin: 0;
 }
+.header h1 {
+  color: #4a4a4a;
+  margin: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+.header h1:after,
+.header h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #e75c2e;
+  border-top: 1px solid #e75c2e;
+  height: 5px;
+  background-color: #fff;
+}
 /* head */
 .head {
   background-color: rgba(238, 238, 238, 1);
@@ -145,6 +164,18 @@ p {
   overflow: hidden;
 }
 /* end-training-procedure */
+/* logos */
+.logos {
+  margin: 50px 5%;
+  width: 90%;
+}
+.logos img {
+  position: relative;
+  right: 50%;
+  transform: translateX(50%);
+  width: 70%;
+}
+/* end-logos */
 /* responsive */
 @media (max-width: 1150px) {
   .procedure {
@@ -211,6 +242,9 @@ p {
   .card img {
     width: 80px;
     height: 80px;
+  }
+  .logos img {
+    width: 100%;
   }
 }
 /* end-responsive */

@@ -113,18 +113,26 @@ p {
 .service:hover p {
   display: inline-block;
 }
+/* end-services */
 /* logos */
 .logos {
   margin: 50px 5%;
   width: 90%;
 }
 .logos img {
-  width: 100%;
+  position: relative;
+  right: 50%;
+  transform: translateX(50%);
+  width: 70%;
 }
 /* end-logos */
+/* responsive */
 @media (max-width: 700px) {
   .service-title {
     transition: 0s;
+  }
+  .logos img {
+    width: 100%;
   }
 }
 @media (max-width: 510px) {
@@ -177,4 +185,4 @@ p {
     width: 100%;
   }
 }
-/* end-services */
+/* end-responsive */
