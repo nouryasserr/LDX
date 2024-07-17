@@ -183,6 +183,9 @@ p {
   }
 }
 @media (max-width: 820px) {
+  h5 {
+    display: none;
+  }
   .line {
     flex-wrap: wrap;
   }
